@@ -12,7 +12,7 @@
 				$login=htmlspecialchars($login);
 				if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 					$email=htmlspecialchars($email);
-					if(preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%^&*]{8,12}$/', $password)){
+					if(preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%^&*]{6,15}$/', $password)){
 						$password=md5(htmlspecialchars($password));
 						$z1="SELECT `email` FROM `klienci` WHERE login='".$login."'";
 						$z2="SELECT `login` FROM `klienci` WHERE email='".$email."'";

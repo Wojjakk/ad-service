@@ -1,9 +1,10 @@
 *{
     margin: 0;     
     color: black;
+    overflow-x: hidden;
 }
 
-#container{
+.container{
     height: 100vh;
     width: 100vw;
     background-color: #B4BEC9;
@@ -14,16 +15,6 @@
     width: 100%;
     background-color: #002333;
     float: left;
-
-}
-
-#main{
-    height: 60%;
-    width: 60%;
-    background-color: #FFFFFF;
-    overflow: overlay;
-    margin: 0 auto;
-    margin-top: 10px;
 }
 
 .topnav {
@@ -51,13 +42,6 @@
     color: white;
 }
 
-input[type=text] {
-    border: none;
-    width: 100%;
-    height: 20%;
-    font-size: 17px;
-}
-
 @media screen and (max-width: 600px) {
 .topnav a, .topnav input[type=text] {
     float: none;
@@ -66,13 +50,33 @@ input[type=text] {
     width: 100%;
     margin: 0;
     padding: 14px;
+}   
+}
+
+#main{
+    height: 60%;
+    width: 60%;
+    background-color: #FFFFFF;
+    overflow: overlay;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 input[type=text] {
     border: 1px solid rgb(0, 0, 0);  
-}}
+}
 
-#dodawanie{
+input[type=text] {
+    border: none;
+    width: 60%;
+    height: 20%;
+    font-size: 17px;
+}
+input{
+    margin-left: 3px;
+}
+
+#dodawanie {
     margin: 0 auto;
     margin-top: 10px;
     margin-left: 35%;
@@ -83,4 +87,58 @@ input[type=text] {
     .main, .topnav, .container, .dodawanie{
       width: 100%;
     }
+}
+
+#main2 {
+    height: 60%;
+    width: 80%;
+    background-color: #B4BEC9;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#log {
+    float: left;
+    background-color: #18516b;
+    width: 600px;
+    height: 250px;
+}
+
+#rej {
+    float: right;
+    background-color: #18516b;
+    width: 600px;
+    height: 250px;
+}
+
+#log label,p,h1 , #rej label{
+    color: white;
+}
+
+.h2 {
+    color: black;
+    text-align: center;
+}
+
+h1{
+    color: black;
+}
+
+img {
+    width: auto;
+    height: 48px;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    color: black;
+    background-color: #18516b;
+    text-align: center;
+    font-size: 60px;
+}
+
+p{
+    color: black;
 }

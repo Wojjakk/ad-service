@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+    
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+    <a class="active" href="index.php">Home</a>
+        <a href="about.php">About</a>
+        <a href="contact.php">Contact</a>
+        <img src = 'logo.png'>
         <p style="float: right">
             <?php 
 				if(isset($_SESSION['login'])){
@@ -28,6 +29,7 @@
         </p>
         
     </div>
+    <div class="container">
        <h1 class="h2">Ogłoszenia</h1>         
     <div id="main">
         
@@ -71,6 +73,6 @@
         <?php mysqli_close($con); ?>
         </div>
     </div>
-
+                <footer>Prawa autorskie tego typu</footer>
 </body>
 </html>

@@ -29,19 +29,17 @@
 	<head>
 		<title>Ogloszenia</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-	
-		<div id="baner">
-			<h1>Ogłoszenia</h1>
-		</div>
-		<div style="margin-left: 18%;">
-			<p><a class="link" href="index.php">Strona główna</a><p>
-		</div>
-		
-		<div id="srodek">
-			<div id="lewy" >
+		<div class="container">
+	<div class="topnav">
+        <a href="index.php">Home</a>
+        <a href="about.php">About</a>
+        <a href="contact.php">Contact</a>
+    </div>
+		<div id="main2">
+			<div id="log" >
 				<h1>Zaloguj się</h1>
 				<form name="logowanie" id="logowanie" method="POST" action="login.php">
 					<label for="login">Login: </label><br>
@@ -52,25 +50,25 @@
 					<?php echo $errorl; ?>
 				</form>
 			</div>
-			<div id="prawy">
+			<div id="rej">
 					<h1>Rejestracja</h1>
 					<form id="rejestracja" name="rejestracja" autocomplete="false" method="POST" action="rejestracja.php">
 						<label for="login">Nazwa konta: </label><br>
-						<input autocomplete="none" id="login" name="login" placeholder="Podaj nazwe" type="text" required>
-						<p>Min. 2 znaki, tylko litery i cyfry</p>
+						<input autocomplete="none" id="login" name="login" placeholder="Podaj nazwę uzytkownika" type="text" required>
+						<p>Min. 2 znaki, bez znakow specjalnych</p>
 						<label for="email">Adres e-mail: </label><br>
-						<input autocomplete="none" id="email" name="email" placeholder="Podaj email" type="text" required>
-						<p>Przykładowy adres email: nazwa@poczta.pl</p>
+						<input autocomplete="none" id="email" name="email" placeholder=" nazwa@poczta.pl" type="text" required><br>
 						<label for="password">Hasło: </label><br>
 						<input autocomplete="none" readonly onfocus="this.removeAttribute('readonly');" id="password" name="password" placeholder="Wybierz hasło" type="password" required>
-						<p>8-12 znaków, zawiera min. 1 litere i cyfre, może zawierac znaki specjalne</p>
+						<p>6-15 znaków, min. jedna cyfra oraz litera, może zawierac znaki specjalne</p>
 						<input type="submit" value="Zarejestruj">
 						<?php echo $errorr; ?>
 					</form>
 				
 			</div>
-			<div style="clear:both;"></div>
+
 		</div>
-		
+</div>
+<footer>Prawa autorskie tego typu</footer>
 	</body>
 </html>
